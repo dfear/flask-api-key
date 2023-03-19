@@ -26,6 +26,15 @@ $ python3 goaway.py
  * Running on https://127.0.0.1:443/ (Press CTRL+C to quit)
 ```
 
+####How to regenerate a self-signed SSL certificate.
+```
+$ openssl genrsa -des3 -out example.key 4096
+$ openssl req -new -key example.key -out example.csr
+$ cp example.key example.key.org
+$ openssl rsa -in example.key.org -out example.key
+$ openssl x509 -req -days 365 -in example.csr -signkey example.key -out example.crt
+```
+
 ##GET Test
 ```
 curl -k https://127.0.0.1
