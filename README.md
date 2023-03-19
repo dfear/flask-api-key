@@ -21,6 +21,7 @@ Be sure to change the value in api.key when deploying.
 $ cd flask-api-key
 $ virtualenv venv
 $ . venv/bin/activate
+$ pip install -r requirements.txt
 $ export FLASK_APP=goaway.py
 $ flask run
  * Running on https://127.0.0.1:443/ (Press CTRL+C to quit)
