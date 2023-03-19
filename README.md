@@ -40,7 +40,7 @@ Flask server output:
 ##POST Tests
 ###Key in header
 ```
-$ curl -k -H "Content-Type: application/json" -H "x-api-key: eiWee8ep9due4deeshoa8Peichai8Ei2" -X POST -d '{"username":"xyz","password":"xyz"}' https://127.0.0.1/json/
+$ curl -k -H "Content-Type: application/json" -H "x-api-key: eiWee8ep9due4deeshoa8Peichai8Eih" -X POST -d '{"username":"xyz","password":"xyz"}' https://127.0.0.1/json/
 Posted JSON!
 ```
 Flask server output:
@@ -50,11 +50,10 @@ Flask server output:
 
 ###Key in argument
 ```
-curl -k -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' https://127.0.0.1/json/?key=eiWee8ep9due4deeshoa8Peichai8Ei2
+$ curl -k -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' https://127.0.0.1/json/?key=eiWee8ep9due4deeshoa8Peichai8Eih
 Posted JSON!
 ```
 Flask server output:
 ```
-127.0.0.1 - - [23/Oct/2016 14:55:26] "POST /json/?key=eiWee8ep9due4deeshoa8Peich
-ai8Eih HTTP/1.1" 200 -
+127.0.0.1 - - [23/Oct/2016 14:55:26] "POST /json/?key=eiWee8ep9due4deeshoa8Peichai8Eih HTTP/1.1" 200 -
 ```
