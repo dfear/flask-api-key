@@ -22,8 +22,7 @@ $ cd flask-api-key
 $ virtualenv venv
 $ . venv/bin/activate
 $ pip install -r requirements.txt
-$ export FLASK_APP=goaway.py
-$ flask run
+$ python3 goaway.py
  * Running on https://127.0.0.1:443/ (Press CTRL+C to quit)
 ```
 
